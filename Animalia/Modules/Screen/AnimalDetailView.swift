@@ -40,6 +40,7 @@ struct AnimalDetailView: View {
             }
             .padding()
             
+            // MARK: - Fact
             Group {
                 HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
                 
@@ -47,6 +48,7 @@ struct AnimalDetailView: View {
             }
             .padding()
             
+            // MARK: - Desc
             Group {
                 HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
                 
@@ -55,12 +57,20 @@ struct AnimalDetailView: View {
             .padding()
 //            .font(.subheadline)
             
+            // MARK: - Map
             Group {
                 HeadingView(headingImage: "map", headingText: "National Park")
                 
                 InsetMapView()
             }
             .padding()
+            
+            // MARK: - Link
+            Group {
+                HeadingView(headingImage: "books.vertical", headingText: "Learn More")
+                
+                ExternalWebLinkView(animal: animal)
+            }
         }
         .navigationTitle("Learning about \(animal.name)")
         .navigationBarTitleDisplayMode(.inline)
