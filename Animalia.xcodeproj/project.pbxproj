@@ -28,6 +28,8 @@
 		52DF2B442BDF37E600172E9A /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2B432BDF37E600172E9A /* CoverImageView.swift */; };
 		52DF2B472BDF38EB00172E9A /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2B462BDF38EB00172E9A /* CoverImageModel.swift */; };
 		52DF2B4A2BDF39DD00172E9A /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2B492BDF39DD00172E9A /* Bundle+Ext.swift */; };
+		52DF2B4D2BDF43D200172E9A /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2B4C2BDF43D200172E9A /* AnimalModel.swift */; };
+		52DF2B4F2BDF44A500172E9A /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2B4E2BDF44A500172E9A /* AnimalListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,9 @@
 		52DF2B432BDF37E600172E9A /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		52DF2B462BDF38EB00172E9A /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		52DF2B492BDF39DD00172E9A /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		52DF2B4B2BDF3FF000172E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		52DF2B4C2BDF43D200172E9A /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		52DF2B4E2BDF44A500172E9A /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 		52DF2B112BDF328000172E9A /* Animalia */ = {
 			isa = PBXGroup;
 			children = (
+				52DF2B4B2BDF3FF000172E9A /* Info.plist */,
 				52DF2B482BDF398200172E9A /* Extensions */,
 				52DF2B412BDF379D00172E9A /* Modules */,
 				52DF2B202BDF328A00172E9A /* App */,
@@ -170,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				52DF2B432BDF37E600172E9A /* CoverImageView.swift */,
+				52DF2B4E2BDF44A500172E9A /* AnimalListItemView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				52DF2B462BDF38EB00172E9A /* CoverImageModel.swift */,
+				52DF2B4C2BDF43D200172E9A /* AnimalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,10 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DF2B152BDF328000172E9A /* ContentView.swift in Sources */,
+				52DF2B4D2BDF43D200172E9A /* AnimalModel.swift in Sources */,
 				52DF2B442BDF37E600172E9A /* CoverImageView.swift in Sources */,
 				52DF2B4A2BDF39DD00172E9A /* Bundle+Ext.swift in Sources */,
 				52DF2B132BDF328000172E9A /* AnimaliaApp.swift in Sources */,
 				52DF2B472BDF38EB00172E9A /* CoverImageModel.swift in Sources */,
+				52DF2B4F2BDF44A500172E9A /* AnimalListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +424,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Animalia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animalia/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,11 +455,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Animalia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animalia/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
