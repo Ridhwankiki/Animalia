@@ -50,7 +50,9 @@ struct ContentView: View {
                         
                         
                         ForEach(animals) { animal in
-                            AnimalListItemView(animal: animal)
+                            NavigationLink(destination: AnimalDetailView(animal: animal)){
+                                AnimalListItemView(animal: animal)
+                            }
                         }
                     }
                     .listStyle(.plain)
@@ -58,7 +60,9 @@ struct ContentView: View {
                     ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 12) {
                             ForEach(animals) { animal in
-                                AnimalGridItemView(animal: animal)
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                }
                             }
                         }
                     }
