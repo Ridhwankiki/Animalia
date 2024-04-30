@@ -73,7 +73,7 @@ struct MapView: View {
                             
                             Text("\(region.center.latitude)")
                                 .font(.footnote)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.gray)
                         }
                         
                         Divider()
@@ -88,7 +88,7 @@ struct MapView: View {
                             
                             Text("\(region.center.longitude)")
                                 .font(.footnote)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.gray)
                         }
                         
                         
