@@ -196,16 +196,12 @@
 		52DF2B422BDF37B300172E9A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				52DF2B432BDF37E600172E9A /* CoverImageView.swift */,
+				52DF2B662BE08D9900172E9A /* Watch */,
+				52DF2B642BE08D5900172E9A /* Browse */,
 				52DF2B4E2BDF44A500172E9A /* AnimalListItemView.swift */,
 				52DF2B502BDF503700172E9A /* OctagonImageFrame.swift */,
 				52DF2B522BDF5D1D00172E9A /* AnimalGridItemView.swift */,
 				52DF2B562BDF774600172E9A /* AnimalDetailView.swift */,
-				52DF2B582BDF7CAE00172E9A /* HeadingView.swift */,
-				52DF2B5A2BDF7F5700172E9A /* InsetGalleryView.swift */,
-				52DF2B5C2BDF829600172E9A /* InsetFactView.swift */,
-				52DF2B5E2BDF8B4600172E9A /* InsetMapView.swift */,
-				52DF2B622BDF946B00172E9A /* ExternalWebLinkView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -226,6 +222,34 @@
 				52DF2B602BDF8E2500172E9A /* CLLocation+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52DF2B642BE08D5900172E9A /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2B652BE08D6100172E9A /* Subview */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		52DF2B652BE08D6100172E9A /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2B5A2BDF7F5700172E9A /* InsetGalleryView.swift */,
+				52DF2B5C2BDF829600172E9A /* InsetFactView.swift */,
+				52DF2B5E2BDF8B4600172E9A /* InsetMapView.swift */,
+				52DF2B582BDF7CAE00172E9A /* HeadingView.swift */,
+				52DF2B622BDF946B00172E9A /* ExternalWebLinkView.swift */,
+				52DF2B432BDF37E600172E9A /* CoverImageView.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		52DF2B662BE08D9900172E9A /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Watch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
